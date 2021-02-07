@@ -74,10 +74,7 @@ for i in range(nsteps-1):
     
     ies[i+1] = sum_int
     step[i+1] = u
-    v = odeint(vehicle,v0,[0,delta_t],args=(u,load)) 
-    v0 = v[-1]   # take the last value
-    # v0 = v0 + np.random.normal(0, 1)
-    vs[i+1] = v0 # store the velocity for plotting
+    v = odeint(vehicle,v0,[0,de
 
     
 
